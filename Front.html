@@ -19,7 +19,6 @@
                 margin: 10px;
     }
 </style>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TO-DO LIST</title>
@@ -30,8 +29,10 @@
 <body bgcolor="#89CFF0">
     <div class="form-container">
     <font size="+3"><p><label for="to-do">skriv inn hva du må gjøre i feltet under:</label></p></font>
-        <textarea name="to-do" id="to-do" cols="50" rows="2">
-        </textarea> <input type="submit" value="Legg til">
+        <form method="post" action="add-task">
+            <textarea name="to-do" id="to-do" cols="50" rows="2">
+            </textarea> <input type="submit" value="Legg til">
+        </form>
     </div>
 
 </body>
