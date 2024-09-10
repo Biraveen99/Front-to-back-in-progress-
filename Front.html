@@ -2,14 +2,22 @@
 <html lang="en">
 <head>
 <style>
-h1 {text-align: center;}
-p {text-align: center;}
-textarea input[type="submit"]{
-    margin:0 auto ;
-    display: block;
-    vertical-align: middle;
- } 
+    h1 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
 
+    .form-container {
+            text-align: center;
+        }
+
+    textarea, input[type="submit"] {
+                display: inline-block;
+                vertical-align: middle;
+                margin: 10px;
+    }
 </style>
 
     <meta charset="UTF-8">
@@ -20,8 +28,11 @@ textarea input[type="submit"]{
 <font size="+5"><h1> VELKOMMEN TIL DIN TO-DO LISTE &#x1F601;</h1></font>
 
 <body>
-   <p><label for="to-do">skriv inn hva du må gjøre i feltet under:</label></p>
-   <textarea name="to-do" id="to-do" cols="50" rows="2">
-    </textarea> <input type="submit" value="Legg til">
+    <div class="form-container">
+    <font size="+3"><p><label for="to-do">skriv inn hva du må gjøre i feltet under:</label></p></font>
+        <textarea name="to-do" id="to-do" cols="50" rows="2">
+        </textarea> <input type="submit" value="Legg til">
+    </div>
+
 </body>
 </html>
