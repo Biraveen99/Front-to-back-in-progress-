@@ -3,8 +3,15 @@
 <head>
 <style>
 h1 {text-align: center;}
+p {text-align: center;}
+textarea input[type="submit"]{
+    margin:0 auto ;
+    display: block;
+    vertical-align: middle;
+ } 
 
 </style>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TO-DO LIST</title>
@@ -13,6 +20,8 @@ h1 {text-align: center;}
 <font size="+5"><h1> VELKOMMEN TIL DIN TO-DO LISTE &#x1F601;</h1></font>
 
 <body>
-    <p>skriv inn hva du må gjøre i feltet under: </p>
+   <p><label for="to-do">skriv inn hva du må gjøre i feltet under:</label></p>
+   <textarea name="to-do" id="to-do" cols="50" rows="2">
+    </textarea> <input type="submit" value="Legg til">
 </body>
 </html>
